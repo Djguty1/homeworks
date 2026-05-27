@@ -1,0 +1,138 @@
+.ranking-section {
+  margin-top: 40px;
+}
+
+.section-header {
+  margin-bottom: 30px;
+
+  h2 {
+    font-size: 36px;
+
+    color: #1db954;
+
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #aaa;
+  }
+}
+
+.songs-grid {
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(320px, 1fr)
+  );
+
+  gap: 25px;
+}
+
+.song-card {
+  background: linear-gradient(
+    180deg,
+    #1e1e1e,
+    #151515
+  );
+
+  border-radius: 24px;
+
+  padding: 20px;
+
+  transition: 0.3s ease;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+  position: relative;
+
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-8px);
+
+    background: linear-gradient(
+      180deg,
+      #252525,
+      #1a1a1a
+    );
+  }
+}
+
+.song-position {
+  position: absolute;
+
+  top: 18px;
+
+  right: 18px;
+
+  background: #1db954;
+
+  color: black;
+
+  font-weight: bold;
+
+  padding: 8px 14px;
+
+  border-radius: 20px;
+}
+
+.song-image {
+  width: 100%;
+
+  height: 240px;
+
+  object-fit: cover;
+
+  border-radius: 18px;
+
+  margin-bottom: 20px;
+}
+
+.song-content {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  h3 {
+    font-size: 24px;
+
+    color: white;
+
+    margin: 0;
+  }
+}
+
+.artist {
+  color: #ccc;
+
+  font-size: 16px;
+}
+
+.album {
+  color: #777;
+
+  font-size: 14px;
+}
+
+.song-meta {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-top: 10px;
+
+  color: #1db954;
+
+  font-weight: bold;
+}
+
+audio {
+  width: 100%;
+
+  margin-top: 15px;
+
+  border-radius: 12px;
+}

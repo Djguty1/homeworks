@@ -1,0 +1,56 @@
+.graph-section {
+    margin-top: 70px;
+
+    h2 {
+        color: white;
+
+        font-size: 32px;
+
+        margin-bottom: 30px;
+    }
+}
+
+.graph-grid {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,
+            minmax(280px, 1fr));
+
+    gap: 25px;
+}
+
+.graph-card {
+    background: #1e1e1e;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    border: 1px solid #2c2c2c;
+
+    h3 {
+        color: #1db954;
+
+        margin-bottom: 20px;
+    }
+}
+
+.relations {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.relation-pill {
+    background: #2a2a2a;
+
+    padding: 10px 16px;
+
+    border-radius: 18px;
+
+    color: white;
+
+    font-size: 14px;
+}
